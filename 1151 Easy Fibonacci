@@ -1,0 +1,28 @@
+#include <bits/stdc++.h>
+#include<iostream>
+
+using namespace std;
+
+int main()
+{
+    unsigned int i,num,firstNum=0,secoundNum=1,thredNum;
+    cin>>num;
+    cout<<firstNum<<" ";
+    cout<<secoundNum<<" ";
+    for(i=3; i<=num; i++)
+    {
+        thredNum=firstNum+secoundNum;
+        if(i!=num)
+        {
+            cout<<thredNum<<" ";
+        }
+        else
+        {
+            cout<<thredNum<<endl;
+        }
+        firstNum=secoundNum;
+        secoundNum=thredNum;
+    }
+
+    return 0;
+}
